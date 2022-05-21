@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<style>  
+    /* The following tag selector body use the font-family and background-color properties for body of a page*/  
+      
+    body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background-color: pink;  
+    }   
+    /* Following container class used padding for generate space around it, and also use a background-color for specify the color lightblue as a background */    
+    .container {  
+    padding: 50px;  
+    background-color: lightblue;  
+    }  
+    /* The following tag selector input use the different properties for the text filed. */  
+    input[type=text] {  
+      width: 100%;  
+      padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+     border: none;  
+     background: #f1f1f1;  
+    }  
+    input[type=text]:focus {  
+    background-color: orange;  
+    outline: none;  
+    }  
+     div {  
+                padding: 10px 0;  
+    }      
+    hr {  
+      border: 1px solid #f1f1f1;  
+      margin-bottom: 25px;  
+    }  
+    /* The following tag selector button uses the different properties for the Button. */  
+    button {  
+      background-color: #4CAF50;  
+      color: white;  
+      margin: 8px 0;  
+      border: none;  
+      cursor: pointer;  
+      padding: 16px 20px;  
+      width: 100%;  
+      opacity: 0.9;  
+    }  
+    /* The following tag selector hover uses the opacity property for the Button which select button when you mouse over it. */  
+    button:hover {  
+    opacity: 1;  
+    }  
+    </style>  
+<h1>Survey Kepuasan Pelanggan</h1>
+    <p><label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama"><br></p>
+    <p><label for="umur">Umur:</label><br>
+    <input type="text" id="umur" name="umur"><br></p>
+    <p><label for="jeniskelamin">Jenis Kelamin</label>
+    <br>
+    </p>
+    <input type="radio" id="jeniskelamin" value="Laki-laki" name="jeniskelamin" checked > Laki-laki   
+    <input type="radio" id="jeniskelamin" value="Perempuan" name="jeniskelamin"> Perempuan   
+    <br />
+    <p><label for="name">Nilai Kepuasan (1-5):</label>
+    <input type="text" id="name" name="name" required minlength="3" maxlength="10"></p>
+    <P><label for="menggunakan layanan">Darimana anda mengetahui produk kami?</label></P>
+    <input type="checkbox" name="menggunakan layanan" id="menggunakan layanan" value="Sosial Media">
+    <label for="menggunakan layanan">Sosial Media</label><br>
+    <input type="checkbox" name="menggunakan layanan" id="menggunakan layanan" value="Teman">
+    <label for="menggunakan layanan">Teman</label><br>
+    <input type="checkbox" name="menggunakan layanan" id="menggunakan layanan" value="Internet">
+    <label for="menggunakan layanan">Internet</label><br>
+    <p><label for="Apakah anda menggunakan layanan kami?">
+        Apakah anda menggunakan layanan kami?</label><br>
+        </p>
+        <input type="radio" id="yes" value="ya" name="Apakah anda menggunakan layanan kami" checked > Ya   
+        <input type="radio" id="no" value="tidak" name="Apakah anda menggunakan layanan kami"> Tidak   
+        <br />
+            <p>Kritik dan saran</p>
+            <p><textarea name="Kritik dan Saran" rows="10" cols="30"></textarea>
+            </p>
+            <input type='submit' name='tombol' value='kirim' />
